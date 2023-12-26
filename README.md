@@ -10,11 +10,10 @@ This page compiles awesome-papers in the field of natural language processing. I
 
 ### How to run
 Please type below to run the project.
-'''bash
-python mainGCN.py
-'''
+```bash
+python setup.py install
+```
 
-<br/>
 ### Topic
 
 - **Feb 2017, Semi-Supervised Classification with Graph Convolutional Networks**
