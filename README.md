@@ -11,7 +11,12 @@ This page compiles awesome-papers in the field of natural language processing. I
 ### How to run
 Please type below to run the project.
 ```bash
-python setup.py install
+python mainGCN.py
+```
+
+And you can change training setups.
+```bash
+python mainGCN.py --lr=0.02 --epoch=100 --dataset='Cora'
 ```
 
 ### Topic
@@ -19,5 +24,5 @@ python setup.py install
 - **Feb 2017, Semi-Supervised Classification with Graph Convolutional Networks**
     - [Paper](https://arxiv.org/abs/1609.02907)
     - [Page](https://9tailwolf.github.io/study/nlp2/1/)
-    - [Code](./Models/GCN)
+    - [Apply Code](https://9tailwolf.github.io/study/nlp2/1s/)
 
