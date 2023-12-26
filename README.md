@@ -16,8 +16,9 @@ python mainGCN.py
 
 <br/>
 ### Topic
+
 - **Feb 2017, Semi-Supervised Classification with Graph Convolutional Networks**
     - [Paper](https://arxiv.org/abs/1609.02907)
     - [Page](https://9tailwolf.github.io/study/nlp2/1/)
-    - [Code]
+    - [Code](./Models/GCN)
 
