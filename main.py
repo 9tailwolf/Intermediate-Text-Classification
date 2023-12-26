@@ -1,16 +1,25 @@
-# This is a sample Python script.
+from Models.GCN import GCN
+from Tools.Dataset import Dataset
+from Tools.Training import Training
+import argparse
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+def get_argparse():
+    parser = argparse.ArgumentParser(description="")
 
+    parser.add_argument('--dataset',default='Cora', type=str)
+    parser.add_argument('--hidden_layer',default=20, type=int)
+    parser.add_argument('--epochs',default=100, type=int)
+    parser.add_argument('--lr',default=0.01, type=float)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+    return parser
+def main(args=None):
+    dataset = Dataset().load_data(args.dataset)
+    model = GCN(input_layer=dataset.num_node_features, hidden_layer=args.hidden_layer, output_layer=max(dataset['y'])+1)
+    training = Training(model,dataset)
+    training.training(lr=args.lr,epochs=args.epochs)
 
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    args = get_argparse().parse_args()
+    main(args)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
