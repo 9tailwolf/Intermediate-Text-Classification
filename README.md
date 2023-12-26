@@ -26,10 +26,4 @@ You can see the structure of model in [here](./Models). It is helpful to program
 
 And you can see how train model in [here](./Tools/Training.py). 
 
-### Topic
-
-- **Feb 2017, Semi-Supervised Classification with Graph Convolutional Networks**
-    - [Paper](https://arxiv.org/abs/1609.02907)
-    - [Page](https://9tailwolf.github.io/study/nlp2/1/)
-    - [Source Code](https://9tailwolf.github.io/study/nlp2/1s/)
-
+[This page](https://9tailwolf.github.io/study/nlp2) is a main page for Intermediate-Text-Classification. 
